@@ -79,6 +79,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.3)
     formatador (0.2.4)
+    fql (0.3.1)
+      multi_json
     guard (2.6.0)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -103,6 +105,10 @@ GEM
     json (1.8.1)
     jwt (0.1.11)
       multi_json (>= 1.5)
+    koala (1.9.0)
+      addressable
+      faraday
+      multi_json
     launchy (2.4.2)
       addressable (~> 2.3)
     listen (2.7.4)
@@ -261,10 +267,12 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   faker
+  fql
   guard-rspec
   httparty
   jbuilder (~> 1.2)
   jquery-rails
+  koala
   launchy
   omniauth
   omniauth-facebook

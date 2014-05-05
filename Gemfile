@@ -14,6 +14,8 @@ gem 'httparty'
 gem 'omniauth'
 # gem 'omniauth-oauth2', '1.1.0'
 gem 'omniauth-facebook'
+gem 'koala'
+gem 'fql'
 
 group :doc do
   gem 'sdoc', require: false
