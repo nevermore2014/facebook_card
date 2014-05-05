@@ -105,7 +105,7 @@ GEM
       multi_json (>= 1.5)
     launchy (2.4.2)
       addressable (~> 2.3)
-    listen (2.7.3)
+    listen (2.7.4)
       celluloid (>= 0.15.2)
       celluloid-io (>= 0.15.0)
       rb-fsevent (>= 0.9.3)
@@ -266,6 +266,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
+  omniauth
   omniauth-facebook
   pg
   poltergeist

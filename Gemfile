@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 'httparty'
+gem 'omniauth'
+# gem 'omniauth-oauth2', '1.1.0'
 gem 'omniauth-facebook'
 
 group :doc do
