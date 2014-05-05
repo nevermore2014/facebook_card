@@ -3,7 +3,11 @@ FacebookCard::Application.routes.draw do
   match 'auth/failure', via: [:get, :post], to: redirect('/')
   match 'signout', to: 'sessions#destroy', via: [:get, :post], as: 'signout'
 
-  resources :cards
+  resources :users do
+    resources :cards
+  end
 
-  root to: 'cards#index'
+  root to: 'users#index'
+
+
 end
