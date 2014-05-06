@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
       @card = Card.new
       @user.card = @card
     end
+    @user.facebook(@user)
     redirect_to @user
   end
 
