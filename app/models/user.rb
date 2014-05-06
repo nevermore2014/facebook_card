@@ -61,8 +61,7 @@ class User < ActiveRecord::Base
     user.card.num_status = @status_posts
     user.card.num_link = @link_posts
     user.card.num_video = @video_posts
-
-    binding.pry
+    
 
     block_given? ? yield(@facebook) : @facebook
   rescue Koala::Facebook::APIError => e

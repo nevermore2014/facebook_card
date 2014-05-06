@@ -1,6 +1,5 @@
 <script>
-  var user_id = parseInt('<%= current_user.id %>'),
-      facebook_id = parseInt('<%= current_user.uid %>');
+  var user_id = parseInt('<%= current_user.id %>');
   var FacebookCard = FacebookCard || {};
-  FacebookCard.drawCard(user_id, facebook_id);
+  FacebookCard.getCardData(user_id);
 </script>
